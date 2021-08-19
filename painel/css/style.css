@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html,body{
+    height: 100%;
+    background-color: rgb(225,225,225);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* PÁGINA DE LOGIN */
+
+.box-login{
+    box-shadow: 10px 10px 5px rgb(200,200,200);
+    max-width: 600px;
+    width: 95%;
+    padding: 60px 2%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.box-login h2{
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 10px 0;
+    color: black;
+}
+
+.box-login input[type=text],
+.box-login input[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.box-login input[type=submit]{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px;
+    background-color: #00bfa5;
+    color: white;
+    border: 0;
+}
+
+
+/* BOX ERRO DO PAINEL */
+
+.erro-box{
+    width: 100%;
+    padding: 8px 2%;
+    text-align: center;
+    background: #f75353;
+    color: white;
+    font-size: 15px;
+}
+
+/* FIM PÁGINA LOGIN */
+
+
+/* PAINEL DE CONTROLE */
+
+.clear{
+    clear: both;
+}
+
+.center{
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header{
+    position: relative;
+    left: 250px;
+    padding: 10px 0;
+    background: #78909c;
+    width: calc(100% - 250px);
+}
+
+.loggout{
+    float: right;
+}
+
+.loggout a{
+    padding: 0 20px;
+    position: relative;
+    top: 4px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.loggout a > span{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.menu-btn{
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+
+.menu-wraper{
+    width: 250px;
+}
+
+div.menu{
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 15px 0;
+    background: #455a64;
+}
+
+div.box-usuario{
+    text-align: center;
+}
+
+.avatar-usuario{
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #2F3D42;
+}
+
+.avatar-usuario i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #2F3D42;
+}
+
+.imagem-usuario{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid #2f3d42;
+}
+
+.imagem-usuario img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nome-usuario{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nome-usuario p{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.itens-menu{
+    margin-top: 20px;
+}
+
+.itens-menu h2{
+    text-align: left;
+    font-weight: normal;
+    font-size: 17px;
+    background: #2f3d42;
+    color: white;
+    padding: 8px;
+}
+
+.itens-menu a{
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 250;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #2f3d42;
+}
+
+/* CONTEÚDO PRINCIPAL DO PAINEL */
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 49%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.content{
+    width: calc(100% - 250px);
+    position: relative;
+    left: 250px;
+    padding: 30px;
+}
+
+.box-content{
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.box-content h2{
+    font-weight: 300;
+    font-size: 23px;
+}
+
+/* TABELAS */
+
+.wraper-table{
+    overflow-x: auto;
+}
+
+table{
+    font-weight: 300;
+    min-width: 900px;
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-of-type(1){
+    background: #0091ea;
+    color: white;
+}
+
+table tr{
+    border-bottom: 1px solid #ccc;
+    color: #555;
+}
+
+table td{
+    padding: 8px;
+}
+
+table a.btn-edit{
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 6px;
+    background: #f4b03e;
+    color: white;
+    font-size: 13px;
+}
+
+table a.btn{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    padding: 4px 6px;
+}
+
+a.btn.edit{background: #f4b03e;}
+a.btn.delete{background: #E05C4E;}
+a.btn.order{background: #0091ea;}
+
+
+/* PAGINAÇÃO */
+
+.paginacao{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.paginacao a{
+    font-size: 14px;
+    margin: 0 8px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #666;
+}
+
+.paginacao a.page-selected{
+    background: rgb(220,220,220);
+}
+
+
+/* BOX METRICAS */
+
+.box-metricas{
+	margin-top: 16px;
+	padding: 0 15px;
+}
+
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	background: #f4b03e;
+	border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background: #E05C4E;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #04A65A;
+}
+
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wraper h2{
+	font-size: 28px;
+}
+
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 26px;
+}
+
+/* TABELA RESPONSIVA */
+
+.table-responsive{
+    margin: 20px auto;
+}
+
+.col{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.table-responsive .row:nth-of-type(1){
+    font-weight: normal;
+    color: white;
+    background-color: #00aca7;
+}
+
+.table-responsive .row{
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.box-content form{
+    margin: 30px 0;
+}
+
+.box-content form label{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+
+.box-content .form-group{
+    margin: 15px 0;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password]{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+.box-content form textarea{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: vertical;
+}
+
+.box-content form select{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+.box-content form input[type=file]{
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+}
+
+.box-content form input[type=submit]{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 16px;
+    background-color: #00bfa5;
+    color: white;
+    border: 0;
+}
+
+/* BOX DE ALERTA */
+
+.box-alert{
+    width: 100%;
+    text-align: center;
+    padding: 8px 2%;
+    color: white;
+}
+
+.sucesso{
+    background: #91cc93;
+}
+
+.erro{
+    background: #f36868;
+}
+
+.menu-active{
+    background-color: #3a4b51;
+}
+
+/*
+.menu-active::before{
+    Adicionar Seta para quando estiver Selecionado
+}
+*/
+
+.form-group-login label{
+    font-size: 13px;
+    padding-right: 6px;
+    font-weight: 300;
+    color: black;
+}
+
+form .form-group-login:nth-of-type(2){
+    position: relative;
+    top: 10px;
+}
+
+
+@media screen and (max-width: 1175px){
+    .w50{
+        width: 100%;
+    }
+
+    .box-metrica-single{
+        min-height: 170px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .box-metrica-single{
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .content{
+        width: 100%;
+        left: 0;
+    }
+
+    header{
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .menu-wraper{
+        width: 200px;
+    }
+}
